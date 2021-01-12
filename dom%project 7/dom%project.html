@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2020 by emerald-web (http://jsbin.com/jimisoc/11/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Favourite Colors</title>
+</head>
+<style>
+  #rectangleWrapper {
+    padding: 50px 50px 0px;
+  }
+</style>
+<body>
+ <h1 id="header"></h1>
+ <h2 id="header2"></h2>
+
+ <div id="rectangleWrapper">
+ <div id="color1" class="rectangle"></div>
+ <p>#C70039</p>
+ <div id="color2" class="rectangle"></div>
+ <p>#DAF7A6</p>
+ <div id="color3" class="rectangle"></div>
+ <p>#FFC300</p>
+ <div id="color4" class="rectangle"></div>
+ <p>#FF5733</p>
+ <div id="color5" class="rectangle"></div>
+ <p>#900C3F</p>
+ <div id="color6"  class="rectangle"></div>
+ <p>#FF0000</p>
+ <div id="color7"  class="rectangle"></div>
+ <p>#0000FF</p>
+ <div id="color8" class="rectangle"></div>
+ <p>#3CB371</p>
+ <div id="color9" class="rectangle"></div>
+ <p>#EE82EE</p>
+ <div id="color10"  class="rectangle"></div>
+ <p>#6A5ACD</p>
+</div>
+
+<script id="jsbin-javascript">
+const header = document.getElementById("header");
+header.innerHTML = "<h1>My Fovourite Colors<h1>";
+
+const header2 = document.getElementById("header2");
+header2.innerHTML = "<h2>Designing my favourite colors with the help of Html, Css, and, Javascript.</h2>"
+
+const allShapes = document.querySelectorAll(".rectangle");
+
+for(const prop of allShapes) {
+  prop.style.height = "100px";
+  prop.style.width = "200px";
+}
+
+
+const color1 = document.getElementById("color1")
+color1.style.backgroundColor = "#c70039";
+
+const color2 = document.getElementById("color2");
+color2.style.backgroundColor = "#DAF7A6";
+
+const color3 = document.getElementById("color3");
+color3.style.backgroundColor = "#FFC300";
+
+const color4 = document.getElementById("color4");
+color4.style.backgroundColor = "#FF5733";
+
+const color5 = document.getElementById("color5");
+color5.style.backgroundColor = "#900c3f";
+
+const color6 = document.getElementById("color6");
+color6.style.backgroundColor = "#ff0000";
+
+const color7 = document.getElementById("color7");
+color7.style.backgroundColor = "#0000ff";
+
+const color8 = document.getElementById("color8");
+color8.style.backgroundColor = "#3cb371";
+
+const color9 = document.getElementById("color9");
+color9.style.backgroundColor = "#ee82ee";
+
+const color10 = document.getElementById("color10");
+color10.style.backgroundColor = "#6a5acd"
+
+
+console.log("Here are the rectangles IDs");
+ 
+ 
+ function rectanglesIDs(a) {
+  setTimeout(() =>{
+   const element = document.getElementById(a)
+   const elID = element.id
+   console.log(elID)
+},  1000);
+ } 
+ 
+
+
+ rectanglesIDs("color1");
+ rectanglesIDs("color2");
+ rectanglesIDs("color3");
+ rectanglesIDs("color4");
+ rectanglesIDs("color5");
+ rectanglesIDs("color6");
+ rectanglesIDs("color7");
+ rectanglesIDs("color8");
+ rectanglesIDs("color9");
+ rectanglesIDs("color10");
+
+ //thank you pirple once again for this wonderful assignment....
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
